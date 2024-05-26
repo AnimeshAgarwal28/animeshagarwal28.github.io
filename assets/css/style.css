@@ -7,6 +7,7 @@ body {
   color: #eaeaea;
 }
 
+/* Improved the color contrast for better readability */
 header {
   background: #333;
   color: #fff;
@@ -14,9 +15,14 @@ header {
   padding: 1rem 0;
   border-bottom: 4px solid #007acc;
 }
-.wrapper{
-  min-height:100vh;
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .profile {
   display: flex;
   align-items: center;
@@ -54,6 +60,7 @@ main {
   border-radius: 15px;
 }
 
+/* Ensured consistency and alignment */
 .posts {
   text-align: center;
 }
@@ -70,6 +77,7 @@ main {
   margin-top: 0;
 }
 
+/* Added hover effect for better interactivity */
 .read-more {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -78,6 +86,7 @@ main {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
 .read-more:hover {
@@ -87,10 +96,12 @@ main {
 a {
   color: #007acc;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #005999;
 }
 
 footer {
@@ -99,7 +110,7 @@ footer {
   background: #333;
   color: #fff;
   border-radius: 15px 15px 0 0;
-  width:100%;
+  width: 100%;
 }
 
 article.post-content {
@@ -107,5 +118,30 @@ article.post-content {
   background: #2a2a2a;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Added media queries for responsiveness */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    margin: 0 0 1rem 0;
+  }
+
+  main {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .post {
+    padding: 0.5rem;
+  }
+
+  article.post-content {
+    padding: 1rem;
+  }
 }
 
