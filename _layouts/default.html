@@ -26,6 +26,18 @@
       <p>&copy; 2024 Animesh Agarwal. All rights reserved.</p>
     </footer>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var content = document.querySelector('.blog-content');
+        var wordsPerMinute = 238; // Adjust as needed
+        var text = content.innerText.trim();
+        var wordCount = text.split(/\s+/).length;
+        var timeToRead = Math.ceil(wordCount / wordsPerMinute);
+        var timeToReadElement = document.querySelector('.time-to-read');
+        timeToReadElement.innerText = timeToRead + " min read";
+    });
+</script>
+
 </body>
 </html>
 
