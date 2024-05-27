@@ -1,8 +1,8 @@
-title: Your Blog Title
+title: GSoC Blogs
 description: >- 
-  This is your blog where you write about your thoughts and experiences.
+  A blog series of my GSoC'24 journey.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://animeshagarwal28.github.io" # the base hostname & protocol for your site
 theme: minima
 
 # Build settings
