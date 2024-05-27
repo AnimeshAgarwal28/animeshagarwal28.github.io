@@ -4,9 +4,12 @@ layout: default
 
 <article class="post-content">
   <h1>{{ page.title }}</h1>
-  <p>{{ page.date | date: "%B %d, %Y" }}</p>
-  <div class="content">
+  <p class="blog-meta">{{ page.date | date: "%B %d, %Y" }}</p>
+  <div class="content blog-content">
     {{ content }}
   </div>
 </article>
+<div class="navigation">
+  <a class="home-button" href="{{ site.baseurl }}/">Home</a>
+</div>
 
