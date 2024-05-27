@@ -2,7 +2,7 @@ title: GSoC Blogs
 description: >- 
   A blog series of my GSoC'24 journey.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://animeshagarwal28.github.io" # the base hostname & protocol for your site
+url: "http://animeshagarwal28.github.io/" # the base hostname & protocol for your site
 theme: minima
 
 # Build settings
