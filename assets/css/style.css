@@ -44,7 +44,7 @@ header .profile-info {
 
 header .profile-info h1 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 header .profile-info p {
@@ -56,6 +56,9 @@ header .profile-info a {
     text-decoration: none;
 }
 
+h1 {
+  font-size: 1.75em
+}
 header .profile-info a:hover {
     text-decoration: underline;
 }
@@ -78,7 +81,7 @@ header .profile-info a:hover {
 }
 
 .blog-content h2 {
-    font-size: 1.75em;
+    font-size: 1.5em;
     margin-top: 1.5em;
     color: #333;
 }
@@ -186,7 +189,7 @@ footer {
     }
 
     header .profile-info h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     header .profile-info p {
@@ -198,7 +201,7 @@ footer {
     }
 
     .blog-content h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .button, .home-button {
