@@ -1,7 +1,7 @@
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #ddd; /* Light gray text for readability on dark background */
-  background-color: #222; /* Dark gray background */
+  color: #ddd;
+  background-color: #222;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -19,10 +19,10 @@ body {
 header {
   text-align: center;
   padding: 20px 0;
-  background-color: #333; /* Darker gray for header */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
-  color: #eee; /* Lighter text color for header */
+  color: #eee;
 }
 
 header .profile {
@@ -49,7 +49,7 @@ header .profile-info h1 {
 
 header .profile-info p {
   margin: 5px 0;
-  color: #ddd; /* Lighter text color for info */
+  color: #ddd;
 }
 
 header .profile-info a {
@@ -75,30 +75,30 @@ header .profile-info a:hover::after {
 
 h1 {
   font-size: 1.75em;
-  color: #eee; /* Lighter text color for headings */
+  color: #eee;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #333; /* Darker gray for container */
+  background-color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   margin-bottom: 20px;
-  color: #ddd; /* Lighter text color for container content */
+  color: #ddd;
 }
 
 .blog-content {
   font-size: 1.1em;
   line-height: 1.8;
-  color: #eee; /* Lighter text color for content */
+  color: #eee;
 }
 
 .blog-content h2 {
   font-size: 1.5em;
   margin-top: 1.5em;
-  color: #ddd; /* Lighter text color for subheadings */
+  color: #ddd;
 }
 
 .blog-content a {
@@ -123,10 +123,10 @@ h1 {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #333; /* Darker gray for footer */
+  background-color: #333;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
   margin-top: auto;
-  color: #ddd; /* Lighter text color for footer */
+  color: #ddd;
 }
 
 .button,
@@ -134,8 +134,8 @@ footer {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 20px;
-  background-color: #4CAF50; /* Green button color */
-  color: #fff; /* White button text color */
+  background-color: #4CAF50;
+  color: #fff;
   border-radius: 4px;
   text-decoration: none;
   font-size: 1em;
@@ -144,7 +144,7 @@ footer {
 
 .button:hover,
 .home-button:hover {
-  background-color: #388e3c; /* Darker green button hover color */
+  background-color: #388e3c;
 }
 
 .post-list {
@@ -155,7 +155,7 @@ footer {
 
 .post-list li {
   padding: 10px;
-  border-bottom: 1px solid #444; /* Darker gray border */
+  border-bottom: 1px solid #444;
 }
 
 post-list li:last-child {
@@ -190,30 +190,29 @@ post-list li:last-child {
 .blog-content blockquote {
   margin: 1.5em 0;
   padding: 0.5em 1em;
-  background-color: #444; /* Darker gray blockquote background */
-  border-left: 5px solid #4CAF50; /* Green border for blockquote */
-  color: #ddd; /* Lighter text color for blockquote */
+  background-color: #444;
+  border-left: 5px solid #4CAF50;
+  color: #ddd;
 }
 
 .blog-content code {
-  background-color: #444; /* Darker gray code background */
+  background-color: #444; 
   padding: 0.2em 0.4em;
   border-radius: 4px;
 }
 
 .blog-meta {
-  color: #aaa; /* Lighter gray text for meta info */
+  color: #aaa;
   font-size: 0.9em;
 }
 
 .time-to-read {
   margin-left: 10px;
-  color: #ccc; /* Lighter gray text for time to read */
+  color: #ccc;
 }
 
-/* Centering the home button */
 .home-button {
-  margin: 0 auto; /* Add these styles to center the home button horizontally */
+  margin: 0 auto;
 }
 
 
