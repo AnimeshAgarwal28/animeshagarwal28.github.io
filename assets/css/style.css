@@ -196,9 +196,12 @@ post-list li:last-child {
 }
 
 .blog-content code {
-  background-color: #444; 
-  padding: 0.2em 0.4em;
+  background-color: #222;
+  padding: 0.4em 0.5em;
+  color: #eee;
   border-radius: 4px;
+  font-family: monospace;
+  line-height: 1.4; 
 }
 
 .blog-meta {
@@ -215,11 +218,50 @@ post-list li:last-child {
   margin: 0 auto;
 }
 
+pre {
+    background: #222;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    position: relative;
+}
+
+pre code {
+    display: block;
+    white-space: pre;
+}
+.copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-button:hover {
+    background: #3a3a3a;
+}
+
+.copy-button i {
+    color: #ccc;
+    font-size: 16px;
+}
+
 
 
 @media (max-width: 600px) {
   .container {
-    margin: 0;
+    margin: 0em;
+    margin-bottom: 1em;
     padding: 10px;
   }
 

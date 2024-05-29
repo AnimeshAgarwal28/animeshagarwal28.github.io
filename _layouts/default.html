@@ -36,8 +36,28 @@
         var timeToReadElement = document.querySelector('.time-to-read');
         timeToReadElement.innerText = timeToRead + " min read";
     });
-</script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre').forEach((preBlock) => {
+          const button = document.createElement('button');
+          button.className = 'copy-button';
+          button.innerHTML = '<i class="fas fa-copy"></i>'; // Using Font Awesome icon
+          preBlock.appendChild(button);
 
-</body>
+          button.addEventListener('click', () => {
+              const code = preBlock.querySelector('code').innerText;
+              navigator.clipboard.writeText(code).then(() => {
+                  button.innerHTML = '<i class="fas fa-check"></i>'; // Change to a check icon on success
+                  setTimeout(() => {
+                      button.innerHTML = '<i class="fas fa-copy"></i>'; // Revert back to the copy icon
+                  }, 2000);
+              }).catch((err) => {
+                  console.error('Failed to copy: ', err);
+              });
+          });
+      });
+  });
+  </script>
+
+  </body>
 </html>
 
