@@ -53,13 +53,24 @@ header .profile-info p {
 }
 
 header .profile-info a {
-  color: #999; /* Lighter link color */
+  color: #999;
+  position: relative;
   text-decoration: none;
+  transition: color .4s ease-out;
 }
 
-header .profile-info a:hover {
-  text-shadow: 0 0 3px #ddd; /* Growing underline effect */
-  transition: text-shadow 0.2s ease-in-out; /* Smooth transition */
+header .profile-info a::after {
+  border-radius: 1em;
+  border-top: .1em solid #999;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: .14em;
+  left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1);
+}
+header .profile-info a:hover::after {
+  right: 0;
 }
 
 h1 {
@@ -91,13 +102,22 @@ h1 {
 }
 
 .blog-content a {
-  color: #999; /* Lighter link color */
   text-decoration: none;
+  color: #999;
+  background-image: linear-gradient(#999, #999);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
 }
 
 .blog-content a:hover {
-  text-shadow: 0 0 3px #ddd; /* Growing underline effect */
-  transition: text-shadow 0.2s ease-in-out; /* Smooth transition */
+  text-decoration: none;
+  background-size: 100% 4px;
+}
+.blog-content a:focus {
+  text-decoration: none;
+  background-size: 100% 4px;
 }
 
 footer {
@@ -143,15 +163,25 @@ post-list li:last-child {
 }
 
 .post-list a {
-  color: #999; /* Lighter link color */
   text-decoration: none;
-  font-weight: bold;
+  color: #999;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
 }
 
 .post-list a:hover {
-  text-shadow: 0 0 3px #ddd; /* Growing underline effect */
-  transition: text-shadow 0.2s ease-in-out; /* Smooth transition */
+  text-decoration: none;
+  background-size: 100% 4px;
 }
+
+.post-list a:focus {
+  text-decoration: none;
+  background-size: 100% 4px;
+}
+
 
 .blog-content p {
   margin-bottom: 1em;
