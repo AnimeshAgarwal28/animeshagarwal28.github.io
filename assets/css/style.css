@@ -176,9 +176,9 @@ footer {
 }
 
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
     .container {
+        margin: 0;
         padding: 10px;
     }
 
