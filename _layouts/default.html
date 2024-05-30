@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>{{ page.title }}</title>
+ <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <div class="profile">
-        <img src="{{ "/assets/images/profile.jpg" | relative_url }}" alt="Profile Photo" class="profile-photo">
-        <div class="profile-info">
-          <h1>Animesh Agarwal</h1>
-          <p>Computer Science and Engineering Student</p>
-          <p><a href="https://www.linkedin.com/in/agarwal-animesh/"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
-        </div>
-      </div>
-    </header>
-    <main class="container">
-      {{ content }}
-    </main>
-    <footer>
-      <p>&copy; 2024 Animesh Agarwal. All rights reserved.</p>
-    </footer>
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var content = document.querySelector('.blog-content');
-        var wordsPerMinute = 238; // Adjust as needed
-        var text = content.innerText.trim();
-        var wordCount = text.split(/\s+/).length;
-        var timeToRead = Math.ceil(wordCount / wordsPerMinute);
-        var timeToReadElement = document.querySelector('.time-to-read');
-        timeToReadElement.innerText = timeToRead + " min read";
-    });
-    document.addEventListener('DOMContentLoaded', (event) => {
-      document.querySelectorAll('pre').forEach((preBlock) => {
-          const button = document.createElement('button');
-          button.className = 'copy-button';
-          button.innerHTML = '<i class="fas fa-copy"></i>'; // Using Font Awesome icon
-          preBlock.appendChild(button);
+ <div class="wrapper">
+   <header>
+     <div class="profile">
+       <img src="{{ "/assets/images/profile.jpg" | relative_url }}" alt="Profile Photo" class="profile-photo">
+       <div class="profile-info">
+         <h1>Animesh Agarwal</h1>
+         <p>Computer Science and Engineering Student</p>
+         <p><a href="https://www.linkedin.com/in/agarwal-animesh/"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+       </div>
+     </div>
+   </header>
+   <main class="container">
+     {{ content }}
+   </main>
+   <footer>
+     <p>&copy; 2024 Animesh Agarwal. All rights reserved.</p>
+   </footer>
+ </div>
+ <script>
+   document.addEventListener("DOMContentLoaded", function() {
+       var content = document.querySelector('.blog-content');
+       var wordsPerMinute = 238; // Adjust as needed
+       var text = content.innerText.trim();
+       var wordCount = text.split(/\s+/).length;
+       var timeToRead = Math.ceil(wordCount / wordsPerMinute);
+       var timeToReadElement = document.querySelector('.time-to-read');
+       timeToReadElement.innerText = timeToRead + " min read";
+   });
+   document.addEventListener('DOMContentLoaded', (event) => {
+     document.querySelectorAll('pre').forEach((preBlock) => {
+         const button = document.createElement('button');
+         button.className = 'copy-button';
+         button.innerHTML = '<i class="fas fa-copy"></i>'; // Using Font Awesome icon
+         preBlock.appendChild(button);
 
-          button.addEventListener('click', () => {
-              const code = preBlock.querySelector('code').innerText;
-              navigator.clipboard.writeText(code).then(() => {
-                  button.innerHTML = '<i class="fas fa-check"></i>'; // Change to a check icon on success
-                  setTimeout(() => {
-                      button.innerHTML = '<i class="fas fa-copy"></i>'; // Revert back to the copy icon
-                  }, 2000);
-              }).catch((err) => {
-                  console.error('Failed to copy: ', err);
-              });
-          });
-      });
-  });
-  </script>
-
-  </body>
+         button.addEventListener('click', () => {
+             const code = preBlock.querySelector('code').innerText;
+             navigator.clipboard.writeText(code).then(() => {
+                 button.innerHTML = '<i class="fas fa-check"></i>'; // Change to a check icon on success
+                 setTimeout(() => {
+                     button.innerHTML = '<i class="fas fa-copy"></i>'; // Revert back to the copy icon
+                 }, 2000);
+             }).catch((err) => {
+                 console.error('Failed to copy: ', err);
+             });
+         });
+     });
+ });
+ </script>
+ </body>
 </html>
-

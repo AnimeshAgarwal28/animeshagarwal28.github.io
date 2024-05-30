@@ -1,301 +1,300 @@
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #ddd;
-  background-color: #222;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  text-align: left;
+ font-family: 'Helvetica Neue', Arial, sans-serif;
+ color: #ddd;
+ background-color: #222;
+ line-height: 1.6;
+ margin: 0;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
 }
 
 .wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+ flex: 1;
+ display: flex;
+ flex-direction: column;
 }
 
 header {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #333;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px;
-  color: #eee;
+ text-align: center;
+ padding: 20px 0;
+ background-color: #222; /* Same as page background */
+ border-bottom: 1px solid #444; /* Line to separate header */
+ margin-bottom: 20px;
+ color: #eee;
 }
 
 header .profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 header .profile-photo {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+ border-radius: 50%;
+ width: 100px;
+ height: 100px;
+ margin-right: 20px;
 }
 
 header .profile-info {
-  text-align: left;
+ text-align: left;
 }
 
 header .profile-info h1 {
-  margin: 0;
-  font-size: 1.75em;
+ margin: 0;
+ font-size: 1.75em;
 }
 
 header .profile-info p {
-  margin: 5px 0;
-  color: #ddd;
+ margin: 5px 0;
+ color: #ddd;
 }
 
 header .profile-info a {
-  color: #999;
-  position: relative;
-  text-decoration: none;
-  transition: color .4s ease-out;
+ color: #999;
+ position: relative;
+ text-decoration: none;
+ transition: color .4s ease-out;
 }
 
 header .profile-info a::after {
-  border-radius: 1em;
-  border-top: .1em solid #999;
-  content: "";
-  position: absolute;
-  right: 100%;
-  bottom: .14em;
-  left: 0;
-  transition: right .4s cubic-bezier(0,.5,0,1);
+ border-radius: 1em;
+ border-top: .1em solid #999;
+ content: "";
+ position: absolute;
+ right: 100%;
+ bottom: .14em;
+ left: 0;
+ transition: right .4s cubic-bezier(0,.5,0,1);
 }
 header .profile-info a:hover::after {
-  right: 0;
+ right: 0;
 }
 
 h1 {
-  font-size: 1.75em;
-  color: #eee;
+ font-size: 1.75em;
+ color: #eee;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: transparent;
-  box-shadow: none;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  color: #ddd;
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: transparent;
+ box-shadow: none;
+ border-radius: 8px;
+ margin-bottom: 20px;
+ color: #ddd;
 }
 
 .blog-content {
-  font-size: 1.1em;
-  line-height: 1.8;
-  color: #eee;
-  background-color: transparent;
-  box-shadow: none;
+ font-size: 1.1em;
+ line-height: 1.8;
+ color: #eee;
+ background-color: transparent;
+ box-shadow: none;
 }
 
 .blog-content h2 {
-  font-size: 1.5em;
-  margin-top: 1.5em;
-  color: #ddd;
+ font-size: 1.5em;
+ margin-top: 1.5em;
+ color: #ddd;
 }
 
 .blog-content a {
-  text-decoration: none;
-  color: #999;
-  background-image: linear-gradient(#999, #999);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 4px;
-  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+ text-decoration: none;
+ color: #999;
+ background-image: linear-gradient(#999, #999);
+ background-position: 0% 100%;
+ background-repeat: no-repeat;
+ background-size: 0% 2px;
+ transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
 }
 
 .blog-content a:hover {
-  text-decoration: none;
-  background-size: 100% 4px;
+ text-decoration: none;
+ background-size: 100% 2px;
 }
 .blog-content a:focus {
-  text-decoration: none;
-  background-size: 100% 4px;
+ text-decoration: none;
+ background-size: 100% 2px;
 }
 
 footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #333;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
-  margin-top: auto;
-  color: #ddd;
+ text-align: center;
+ padding: 20px 0;
+ background-color: #222; /* Same as page background */
+ border-top: 1px solid #444; /* Line to separate footer */
+ margin-top: auto;
+ color: #ddd;
 }
 
 .button,
 .home-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 1em;
-  text-align: center;
+ display: inline-block;
+ padding: 10px 20px;
+ margin-top: 20px;
+ background-color: #4CAF50;
+ color: #fff;
+ border-radius: 4px;
+ text-decoration: none;
+ font-size: 1em;
+ text-align: center;
 }
 
 .button:hover,
 .home-button:hover {
-  background-color: #388e3c;
+ background-color: #388e3c;
 }
 
 .post-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
 }
 
 .post-list li {
-  padding: 10px;
-  border-bottom: 1px solid #444;
+ padding: 10px;
+ border-bottom: 1px solid #444;
 }
 
 post-list li:last-child {
-  border-bottom: none;
+ border-bottom: none;
 }
 
 .post-list a {
-  text-decoration: none;
-  color: #999;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 4px;
-  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+ text-decoration: none;
+ color: #999;
+ background-image: linear-gradient(currentColor, currentColor);
+ background-position: 0% 100%;
+ background-repeat: no-repeat;
+ background-size: 0% 2px;
+ transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
 }
 
 .post-list a:hover {
-  text-decoration: none;
-  background-size: 100% 4px;
+ text-decoration: none;
+ background-size: 100% 2px;
 }
 
 .post-list a:focus {
-  text-decoration: none;
-  background-size: 100% 4px;
+ text-decoration: none;
+ background-size: 100% 2px;
 }
 
-
 .blog-content p {
-  margin-bottom: 1em;
+ margin-bottom: 1em;
 }
 
 .blog-content blockquote {
-  margin: 1.5em 0;
-  padding: 0.5em 1em;
-  background-color: #444;
-  border-left: 5px solid #4CAF50;
-  color: #ddd;
+ margin: 1.5em 0;
+ padding: 0.5em 1em;
+ background-color: #444;
+ border-left: 5px solid #4CAF50;
+ color: #ddd;
 }
 
 .blog-content code {
-  background-color: #222;
-  padding: 0.4em 0.5em;
-  color: #eee;
-  border-radius: 4px;
-  font-family: monospace;
-  line-height: 1.4; 
+ background-color: #222;
+ padding: 0.4em 0.5em;
+ color: #eee;
+ border-radius: 4px;
+ font-family: monospace;
+ line-height: 1.4; 
 }
 
 .blog-meta {
-  color: #aaa;
-  font-size: 0.9em;
+ color: #aaa;
+ font-size: 0.9em;
 }
 
 .time-to-read {
-  margin-left: 10px;
-  color: #ccc;
+ margin-left: 10px;
+ color: #ccc;
 }
 
 .home-button {
-  margin: 0 auto;
+ margin: 0 auto;
 }
 
 pre {
-    background: #222;
-    color: #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
-    position: relative;
+   background-color: #666;
+   color: #ccc;
+   padding: 10px;
+   border-radius: 5px;
+   overflow-x: auto;
+   position: relative;
 }
 
 pre code {
-    display: block;
-    white-space: pre;
+   display: block;
+   white-space: pre;
 }
 
 .copy-button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background: #222;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   background: #666;
+   color: white;
+   border: none;
+   padding: 5px;
+   cursor: pointer;
+   border-radius: 3px;
+   font-size: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .copy-button:hover {
-    background: #3a3a3a;
+  
+transform: scale(1.1); 
 }
 
 .copy-button i {
-    color: #ccc;
-    font-size: 16px;
+   color: #ccc;
+   font-size: 16px;
 }
 
 @media (max-width: 600px) {
-  .container {
-    margin: 0em;
-    margin-bottom: 1em;
-    padding: 10px;
-  }
+ .container {
+   margin: 0em;
+   margin-bottom: 1em;
+   padding: 10px;
+ }
 
-  header .profile-photo {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-  }
+ header .profile-photo {
+   width: 80px;
+   height: 80px;
+   margin-right: 10px;
+ }
 
-  header .profile-info h1 {
-    font-size: 1.5em;
-  }
+ header .profile-info h1 {
+   font-size: 1.5em;
+ }
 
-  header .profile-info p {
-    font-size: 0.9em;
-  }
+ header .profile-info p {
+   font-size: 0.9em;
+ }
 
-  .blog-content {
-    font-size: 1em;
-  }
+ .blog-content {
+   font-size: 1em;
+ }
 
-  .blog-content h2 {
-    font-size: 1.2em;
-  }
+ .blog-content h2 {
+   font-size: 1.2em;
+ }
 
-  .button,
-  .home-button {
-    padding: 8px 16px;
-    font-size: 0.9em;
-  }
-  
-  .copy-button {
-    display: none;
-  }
+ .button,
+ .home-button {
+   padding: 8px 16px;
+   font-size: 0.9em;
+ }
+
+ .copy-button {
+   display: none;
+ }
 }
